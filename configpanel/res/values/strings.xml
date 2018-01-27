@@ -37,4 +37,8 @@
 
     <string name="fp_wakeup_title">Fingerprint wakes device</string>
     <string name="fp_wakeup_summary">Allow fingerprint to wake the device while screen is off</string>
+
+    <string name="fingerprint_pocketmode_title">Prevent accidental wake-up</string>
+    <string name="fingerprint_pocketmode_summary">Check the proximity sensor prior to wake-ups triggered by the fingerprint sensor</string>
+
 </resources>
