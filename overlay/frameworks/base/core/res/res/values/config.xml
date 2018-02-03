@@ -366,4 +366,8 @@
     <!-- Enable full screen DT2S in lockscreen -->
     <bool name="fullScreenDT2S">true</bool>
 
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
 </resources>
