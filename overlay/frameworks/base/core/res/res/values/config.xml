@@ -340,4 +340,9 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
 </resources>
