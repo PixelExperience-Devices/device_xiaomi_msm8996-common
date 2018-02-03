@@ -360,4 +360,7 @@
     <!-- Enable Night display, which requires HWC 2.0. -->
     <bool name="config_nightDisplayAvailable">true</bool>
 
+    <!-- Button backlight -->
+    <bool name="config_button_brightness_support">true</bool>
+
 </resources>
