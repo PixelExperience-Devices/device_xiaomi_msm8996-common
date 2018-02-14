@@ -85,6 +85,7 @@ persist.debug.sf.statistics=0
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
+persist.radio.aosp_usr_pref_sel=true
 
 # Media
 media.stagefright.enable-player=true
