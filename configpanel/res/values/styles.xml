@@ -31,7 +31,7 @@
     </style>
 
     <style name="SettingsSwitchPreference" parent="@*android:style/Preference.DeviceDefault.SwitchPreference">
-        <item name="android:iconSpaceReserved">true</item>
+        <item name="android:iconSpaceReserved">false</item>
         <item name="android:singleLineTitle">false</item>
     </style>
 
