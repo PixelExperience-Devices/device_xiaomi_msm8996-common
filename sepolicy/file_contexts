@@ -24,6 +24,11 @@
 /sys/devices/platform/kcal_ctrl.0(/.*)?			u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?		u:object_r:kcal_dev:s0
 
+/sys/devices/virtual/timed_output/vibrator/vtg_level            u:object_r:sysfs_vibrator:s0
+/sys/devices/soc/78b7000.i2c/i2c-3/3-0038/disable_keys          u:object_r:sysfs:s0
+
+/sys/module/qpnp_smbcharger/parameters/default_hvdcp3_icl_ma            u:object_r:sysfs_qc:s0 
+
 /sys/module/cnss_common/parameters/bdwlan_file                                  u:object_r:sysfs_cnss_common:s0
 
 # Data files
