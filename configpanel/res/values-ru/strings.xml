@@ -37,7 +37,7 @@
   <string name="fp_wakeup_title">Сканер отпечатков будит устройство</string>
   <string name="fp_wakeup_summary">Позволить сканеру отпечатков пальца будить устройство при выключенном экране</string>
 
-  <!-- Kcal -->
+  <!-- KCal -->
   <string name="kcal_title">Цвет экрана</string>
   <string name="kcal_summary">Калибровка цвета экрана с помощью KCAL</string>
   <string name="kcal_enabled_title">Включить KCAL</string>
@@ -47,4 +47,10 @@
   <string name="kcal_blue">Синий</string>
   <string name="kcal_saturation">Насыщенность</string>
   <string name="kcal_contrast">Контрастность</string>
+
+  <!-- Vibrator -->
+  <string name="vibrator_category">Вибрация</string>
+  <string name="vibrator_title">Сила</string>
+  <string name="vibrator_summary">Установить силу вибрации</string>
+  <string name="vibrator_test">Тест</string>
 </resources>
