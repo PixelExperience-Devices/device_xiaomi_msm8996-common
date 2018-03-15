@@ -16,8 +16,69 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Button settings -->
-  <string name="button_panel_title">Dodatkowe przyciski</string>
-  <string name="button_swap_title">Zamień przyciski</string>
-  <string name="button_swap_summary">Zamień miejscami przyciski ostatnio uruchomionych aplikacji i powrotu</string>
+
+    <!-- Category title -->
+    <string name="buttons_title">Przyciski Sprzętowe</string>
+    <string name="graphics_title">Grafika</string>
+
+    <!-- Application title -->
+    <string name="device_settings_app_name">Funkcje Urządzenia</string>
+
+    <!-- Button settings -->
+    <string name="button_panel_title">Funkcje Urządzenia</string>
+    <string name="additional_buttons_title">Dodatkowe przyciski</string>
+
+    <string name="button_swap_title">Zamień przyciski</string>
+    <string name="button_swap_summary">Zamień miejscami przyciski ostatnio uruchomionych aplikacji i powrotu</string>
+
+    <!-- Fingeprint reader settings -->
+    <string name="fp_title">Odcisk palca</string>
+    <string name="gestures_title">Gesty</string>
+
+    <string name="fp_home_title">Odcisk palca jako przycisk</string>
+    <string name="fp_home_summary">Użyj odcisku palca jako konfigurowalnego przycisku</string>
+
+    <string name="dt2w_title">Dotknij, aby wybudzić</string>
+    <string name="dt2w_summary">Dotknij dwukrotnie ekranu, aby go wybudzić</string>
+
+    <string name="fp_wakeup_title">Wybudzenie ekranu czytnikiem linii papilarnych</string>
+    <string name="fp_wakeup_summary">Pozwól, aby czujnik linii papilarnych wybudził urządzenie, gdy ekran jest wyłączony</string>
+
+    <string name="fingerprint_pocketmode_title">Zapobiegaj przypadkowemu wybudzeniu</string>
+    <string name="fingerprint_pocketmode_summary">Sprawdź czujnik zbliżeniowy przed wybudzeniem za pomocą czytnika linii papilarnych</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Kolor wyświetlacza</string>
+    <string name="kcal_summary">Skalibruj kolor wyświetlacza za pomocą KCAL</string>
+    <string name="kcal_enabled_title">Włącz KCAL</string>
+    <string name="kcal_enabled_summary">Włącz kalibracje wyświetlacza za pomocą KCAL</string>
+    <string name="kcal_red">Czerwony</string>
+    <string name="kcal_green">Zielony</string>
+    <string name="kcal_blue">Niebieski</string>
+    <string name="kcal_saturation">Nasycenie</string>
+    <string name="kcal_contrast">Kontrast</string>
+    <string name="menu_reset">Reset</string>
+    <string name="kcal_color_temp">Temperatura barw</string>
+
+    <!-- Vibrator -->
+    <string name="vibrator_category">Wibracje</string>
+    <string name="vibrator_title">Intensywność wibracji</string>
+    <string name="vibrator_summary">Ustaw siłę wibracji</string>
+    <string name="vibrator_test">Test</string>
+
+    <!-- QC 3.0 Charge limit -->
+    <string name="qc3_category">Limit ładowania</string>
+    <string name="qc3_title">Limit ładowania przy pomocy QC 3.0</string>
+    <string name="qc3_2000">2000 mA</string>
+    <string name="qc3_2100">2100 mA</string>
+    <string name="qc3_2200">2200 mA</string>
+    <string name="qc3_2300">2300 mA</string>
+    <string name="qc3_2400">2400 mA (Domyślne)</string>
+    <string name="qc3_2500">2500 mA</string>
+    <string name="qc3_2600">2600 mA</string>
+    <string name="qc3_2700">2700 mA</string>
+    <string name="qc3_2800">2800 mA</string>
+    <string name="qc3_2900">2900 mA</string>
+    <string name="qc3_3000">3000 mA (Niezalecane)</string>
+
 </resources>
