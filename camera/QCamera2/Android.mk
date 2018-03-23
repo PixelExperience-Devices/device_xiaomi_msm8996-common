@@ -56,9 +56,6 @@ LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS -D_ANDROID
 
-ifeq ($(TARGET_USES_AOSP),true)
-LOCAL_CFLAGS += -DVANILLA_HAL
-endif
 
 ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) <= 23 ))" )))
 LOCAL_CFLAGS += -DUSE_HAL_3_3
@@ -106,10 +103,6 @@ endif
 
 ifneq (,$(filter msm8996 msmcobalt msmfalcon,$(TARGET_BOARD_PLATFORM)))
     LOCAL_CFLAGS += -DUBWC_PRESENT
-endif
-
-ifneq (,$(filter msm8996,$(TARGET_BOARD_PLATFORM)))
-    LOCAL_CFLAGS += -DTARGET_MSM8996
 endif
 
 #LOCAL_STATIC_LIBRARIES := libqcamera2_util

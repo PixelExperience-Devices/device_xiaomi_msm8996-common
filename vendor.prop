@@ -86,6 +86,7 @@ persist.dbg.vt_avail_ovr=1
 
 # Media
 vendor.vidc.enc.disable.pq=true
+vidc.enc.dcvs.extra-buff-count=2
 
 # NFC
 ro.nfc.port=I2C
