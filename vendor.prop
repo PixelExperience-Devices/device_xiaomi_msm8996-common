@@ -79,12 +79,29 @@ ro.sf.lcd_density=480
 sdm.debug.disable_rotator_split=1
 sdm.debug.disable_skip_validate=1
 sdm.perf_hint_window=50
+persist.metadata_dynfps.disable=true
+persist.debug.sf.statistics=0
 
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
 # Media
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+media.stagefright.audio.sink=280
+media.msm8996hw=1
+mm.enable.smoothstreaming=true
+mm.enable.sec.smoothstreaming=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+av.debug.disable.pers.cache=true
+mm.enable.qcom_parser=1048575
+persist.mm.enable.prefetch=true
 vendor.vidc.enc.disable.pq=true
 vidc.enc.dcvs.extra-buff-count=2
 
@@ -127,6 +144,11 @@ persist.data.df.dev_name=rmnet_usb0
 # TimeService
 persist.timed.enable=true
 
+# TCP
+net.tcp.2g_init_rwnd=10
+persist.net.doxlat=true
+ro.data.large_tcp_window_size=true
+
 # USB
 sys.usb.controller=6a00000.dwc3
 sys.usb.ffs.max_write=524288
@@ -135,3 +157,38 @@ sys.usb.mtp.device_type=3
 
 # Wifi
 wifi.interface=wlan0
+wifi.supplicant_scan_interval=360
+
+# Background service properties
+ro.config.max_starting_bg=4
+persist.added_boot_bgservices=4
+
+# Reschedule the services during app launch
+ro.am.reschedule_service=true
+
+# VIDC: debug_levels
+# 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
+vidc.debug.level=0
+
+# Enable 16bit transparency by default
+persist.sys.use_16bpp_alpha=1
+
+# Scrolling cache: 0-force enable, 1-default enable, 2-default disable, 3-force disable
+persist.sys.scrollingcache=1
+
+# Higher fling velocities for smooth scrolling and better responsiveness
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
+# Spare some RAM
+persist.sys.purgeable_assets=1
+
+# Dex2oat threads for faster app installation
+# Use all 4 Cores/Threads of our CPU
+ro.sys.fw.dex2oat_thread_count=4
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-threads=4
+debug.generate-debug-info=false
+
+# Use FIFO UI Scheduling
+sys.use_fifo_ui=1

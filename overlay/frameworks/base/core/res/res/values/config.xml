@@ -369,7 +369,6 @@
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
     <!-- Button backlight -->
-    <integer name="config_buttonBrightnessSettingDefault">255</integer>
     <bool name="config_button_brightness_support">true</bool>
 
 </resources>
