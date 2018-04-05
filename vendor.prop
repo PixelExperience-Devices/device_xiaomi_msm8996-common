@@ -43,6 +43,10 @@ ro.btconfig.dev=/dev/ttyHS0
 # Camera
 persist.camera.gyro.disable=0
 persist.camera.imglib.fddsp=1
+persist.camera.HAL3.enabled=1
+Camera.no_navigation_bar=true
+persist.ts.postmakeup=false
+persist.ts.rtmakeup=false
 
 # CNE
 persist.cne.feature=1
@@ -59,6 +63,10 @@ ro.qcom.ad=1
 ro.qcom.ad.calib.data=/system/etc/calib.cfg
 ro.qcom.ad.sensortype=2
 
+# Display feature (bit0-ColorPrefer bit1-EyeCare bit2-AD bit3-CE bit4-CABC bit5-SRGB)
+ro.sys.display.support=63
+vendor.display.enable_default_color_mode=1
+
 # DRM
 drm.service.enabled=true
 
@@ -66,6 +74,7 @@ drm.service.enabled=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
+debug.sf.enable_hwc_vds=1
 debug.egl.hw=1
 debug.gralloc.enable_fb_ubwc=1
 debug.sf.hw=1
@@ -73,6 +82,7 @@ debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
+persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 ro.opengles.version=196610
 ro.sf.lcd_density=480
@@ -81,6 +91,8 @@ sdm.debug.disable_skip_validate=1
 sdm.perf_hint_window=50
 persist.metadata_dynfps.disable=true
 persist.debug.sf.statistics=0
+debug.sf.recomputecrop=0
+persist.sys.pd_enable=0
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -113,6 +125,11 @@ persist.nfc.smartcard.config=SIM1,SIM2,eSE1
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bg_apps_limit=60
+debug.enable.gamed=0
+ro.min_freq_0=307200
+ro.min_freq_1=307200
+ro.min_freq_2=307200
+ro.min_freq_3=307200
 
 # Priv-app permissions whitelist
 ro.control_privapp_permissions=enforce
@@ -131,6 +148,9 @@ persist.radio.force_on_dc=true
 persist.radio.multisim.config=dsds
 persist.radio.redir_party_num=1
 persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.ignore_dom_time=10
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 
@@ -158,14 +178,11 @@ sys.usb.controller=6a00000.dwc3
 
 # Wifi
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=360
+wifi.supplicant_scan_interval=3600
 
 # Background service properties
 ro.config.max_starting_bg=4
 persist.added_boot_bgservices=4
-
-# Reschedule the services during app launch
-ro.am.reschedule_service=true
 
 # VIDC: debug_levels
 # 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
@@ -193,3 +210,10 @@ debug.generate-debug-info=false
 
 # Use FIFO UI Scheduling
 sys.use_fifo_ui=1
+
+# Disable logdump
+ro.logdumpd.enabled=0
+ 
+# Touch
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
