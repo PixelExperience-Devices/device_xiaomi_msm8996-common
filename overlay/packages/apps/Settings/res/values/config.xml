@@ -17,9 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 <!-- Device specific doze package -->
-    <string name="config_customDozePackage" translatable="false">org.lineageos.settings.device/org.lineageos.settings.device.DozePreferenceActivity</string>
-
-<!-- Device specific gesture package -->
-<string name="config_customGesturePackage">org.lineageos.settings.device/org.lineageos.settings.device.ActionsPreferenceActivity</string>
+    <string name="config_customDozePackage" translatable="false">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
 
 </resources>
