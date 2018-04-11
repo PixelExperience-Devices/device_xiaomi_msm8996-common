@@ -78,4 +78,6 @@
     <string name="qc3_2600">2600 mA</string>
     <string name="qc3_2700">2700 mA</string>
 
+    <string name="summary_empty" translatable="false"></string>
+
 </resources>
