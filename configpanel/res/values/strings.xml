@@ -77,8 +77,5 @@
     <string name="qc3_2500">2500 mA</string>
     <string name="qc3_2600">2600 mA</string>
     <string name="qc3_2700">2700 mA</string>
-    <string name="qc3_2800">2800 mA</string>
-    <string name="qc3_2900">2900 mA</string>
-    <string name="qc3_3000">3000 mA (Not recommended)</string>
 
 </resources>
