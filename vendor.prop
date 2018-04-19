@@ -28,6 +28,7 @@ vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=true
 vendor.audio.tunnel.encode=false
 vendor.voice.path.for.pcm.voip=true
+qcom.hw.aac.encoder=true
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -78,6 +79,7 @@ debug.sf.enable_hwc_vds=1
 debug.egl.hw=1
 debug.gralloc.enable_fb_ubwc=1
 debug.sf.hw=1
+dalvik.vm.heapsize=36m
 debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
@@ -107,7 +109,6 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-scan=true
 media.stagefright.audio.sink=280
-media.msm8996hw=1
 mm.enable.smoothstreaming=true
 mm.enable.sec.smoothstreaming=true
 mmp.enable.3g2=true
