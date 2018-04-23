@@ -52,6 +52,10 @@ persist.ts.rtmakeup=false
 # CNE
 persist.cne.feature=1
 
+# Core Control
+ro.vendor.qti.core_ctl_min_cpu=1
+ro.vendor.qti.core_ctl_max_cpu=4
+
 # Data modules
 persist.data.iwlan.enable=true
 persist.data.mode=concurrent
@@ -72,7 +76,7 @@ vendor.display.enable_default_color_mode=1
 drm.service.enabled=true
 
 # FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
+# ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
 debug.sf.enable_hwc_vds=1
@@ -95,6 +99,8 @@ persist.metadata_dynfps.disable=true
 persist.debug.sf.statistics=0
 debug.sf.recomputecrop=0
 persist.sys.pd_enable=0
+debug.gralloc.gfx_ubwc_disable=0
+persist.sys.force_sw_gles=0
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -143,7 +149,6 @@ ro.telephony.call_ring.multiple=false
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=20,20
 persist.data.qmi.adb_logmask=0
-persist.net.doxlat=true
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.force_on_dc=true
 persist.radio.multisim.config=dsds
@@ -221,3 +226,17 @@ ro.logdumpd.enabled=0
 # Touch
 persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
+
+# Themes
+ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
+ro.com.google.ime.theme_id=5
+
+# Experimental
+debug.enabletr=true
+debug.hwui.render_dirty_regions=false
+debug.hwui.disable_vsync=true
+debug.hwui.profile=false
+debug.hwui.profile.maxframes=60
+debug.hwui.show_dirty_regions=false
+debug.hwui.renderer=opengl
+debug.hwui.level=0
