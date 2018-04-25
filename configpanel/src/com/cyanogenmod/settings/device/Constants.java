@@ -81,7 +81,7 @@ public class Constants {
         sNodeDefaultMap.put(DT2W_KEY, true);
         sNodeDefaultMap.put(FP_HOME_KEY, true);
         sNodeDefaultMap.put(FP_WAKEUP_KEY, true);
-        sNodeDefaultMap.put(CHARGE_LIMIT_KEY, "2400");
+        sNodeDefaultMap.put(CHARGE_LIMIT_KEY, "2700");
 
         sNodeDependencyMap.put(FP_HOME_KEY, new String[]{ VIRTUAL_KEYS_NODE, "1" });
     }
