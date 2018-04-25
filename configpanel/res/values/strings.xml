@@ -18,14 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Category title -->
-    <string name="buttons_title">Hadware Buttons</string>
+    <string name="buttons_title">Hadware buttons</string>
     <string name="graphics_title">Graphics</string>
 
     <!-- Application title -->
-    <string name="device_settings_app_name">Device Features</string>
+    <string name="device_settings_app_name">Device features</string>
 
     <!-- Button settings -->
-    <string name="button_panel_title">Device Features</string>
+    <string name="button_panel_title">Device features</string>
     <string name="additional_buttons_title">Additional buttons</string>
 
     <string name="button_swap_title">Swap buttons</string>
@@ -73,10 +73,10 @@
     <string name="qc3_2100">2100 mA</string>
     <string name="qc3_2200">2200 mA</string>
     <string name="qc3_2300">2300 mA</string>
-    <string name="qc3_2400">2400 mA (Default)</string>
+    <string name="qc3_2400">2400 mA</string>
     <string name="qc3_2500">2500 mA</string>
     <string name="qc3_2600">2600 mA</string>
-    <string name="qc3_2700">2700 mA</string>
+    <string name="qc3_2700">2700 mA (Default)</string>
 
     <string name="summary_empty" translatable="false"></string>
 

@@ -63,9 +63,9 @@
   <string name="qc3_2100">2100 ма</string>
   <string name="qc3_2200">2200 ма</string>
   <string name="qc3_2300">2300 ма</string>
-  <string name="qc3_2400">2400 ма (По умолчанию)</string>
+  <string name="qc3_2400">2400 ма</string>
   <string name="qc3_2500">2500 ма</string>
   <string name="qc3_2600">2600 ма</string>
-  <string name="qc3_2700">2700 ма</string>
+  <string name="qc3_2700">2700 ма (По умолчанию)</string>
 
 </resources>

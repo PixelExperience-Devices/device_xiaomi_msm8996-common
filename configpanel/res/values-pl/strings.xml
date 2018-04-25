@@ -18,14 +18,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Category title -->
-    <string name="buttons_title">Przyciski Sprzętowe</string>
+    <string name="buttons_title">Przyciski sprzętowe</string>
     <string name="graphics_title">Grafika</string>
 
     <!-- Application title -->
-    <string name="device_settings_app_name">Funkcje Urządzenia</string>
+    <string name="device_settings_app_name">Funkcje urządzenia</string>
 
     <!-- Button settings -->
-    <string name="button_panel_title">Funkcje Urządzenia</string>
+    <string name="button_panel_title">Funkcje urządzenia</string>
     <string name="additional_buttons_title">Dodatkowe przyciski</string>
 
     <string name="button_swap_title">Zamień przyciski</string>
@@ -73,9 +73,9 @@
     <string name="qc3_2100">2100 mA</string>
     <string name="qc3_2200">2200 mA</string>
     <string name="qc3_2300">2300 mA</string>
-    <string name="qc3_2400">2400 mA (Domyślne)</string>
+    <string name="qc3_2400">2400 mA</string>
     <string name="qc3_2500">2500 mA</string>
     <string name="qc3_2600">2600 mA</string>
-    <string name="qc3_2700">2700 mA</string>
+    <string name="qc3_2700">2700 mA (Domyślne)</string>
 
 </resources>
