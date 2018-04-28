@@ -159,9 +159,12 @@ on post-fs-data
     setprop vold.post_fs_data_done 1
 
     # Create PERFD deamon related dirs
-    mkdir /data/vendor/perfd 0770 root system
-    chmod 2770 /data/vendor/perfd
-    rm /data/vendor/perfd/default_values
+    setprop ro.min_freq_0 307200
+    mkdir /data/misc/perfd 0755 root system
+    chmod 2755 /data/misc/perfd
+    mkdir /data/system/perfd 0770 root system
+    rm /data/system/perfd/default_values
+    chmod 2770 /data/system/perfd
 
     # NFC local data and nfcee xml storage
     mkdir /data/nfc 0770 nfc nfc
@@ -594,6 +597,16 @@ service ppd /vendor/bin/mm-pp-dpps
     group system graphics
     socket pps stream 0660 system system
     disabled
+
+service perfd /vendor/bin/perfd
+   class main
+   user root
+   group root system
+   writepid /dev/cpuset/system-background/tasks
+   disabled
+
+on property:sys.post_boot.parsed=1
+    start perfd
 
 on property:init.svc.surfaceflinger=stopped
     stop ppd
