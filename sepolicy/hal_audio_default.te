@@ -1,1 +1,4 @@
 r_dir_file(hal_audio_default, persist_usf_cal_file)
+allow hal_audio_default perfd:unix_stream_socket connectto;
+allow hal_audio_default perfd_data_file:sock_file write;
+allow hal_audio_default perfd_data_file:dir search;

@@ -10,3 +10,7 @@ allow init sysfs_type:lnk_file read;
 allow init firmware_file:dir mounton;
 allow init persist_file:dir mounton;
 allow init userdata_block_device:blk_file { write };
+allow init proc_dirty_ratio:file write;
+allow init su:process transition;
+allow init sysfs_devices_system_cpu:dir write;
+allow init sysfs_lowmemorykiller:dir write;
