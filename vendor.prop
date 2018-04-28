@@ -195,6 +195,9 @@ persist.sys.use_16bpp_alpha=1
 # Scrolling cache: 0-force enable, 1-default enable, 2-default disable, 3-force disable
 persist.sys.scrollingcache=1
 
+# SDCardFS
+ro.sys.sdcardfs=true
+
 # Higher fling velocities for smooth scrolling and better responsiveness
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
