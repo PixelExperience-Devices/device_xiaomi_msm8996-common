@@ -381,4 +381,7 @@
          Used to decide if the user can change the colors -->
     <add-resource type="bool" name="config_multiColorNotificationLed">true</add-resource>
 
+    <!-- Whether navigation bar can be disabled (for devices with hardware keys) -->
+    <bool name="config_canDisableNavigationBar">true</bool>
+
 </resources>
