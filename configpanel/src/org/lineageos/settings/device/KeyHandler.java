@@ -24,16 +24,15 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
 
-import com.android.internal.os.DeviceKeyHandler;
+import org.lineageos.settings.device.utils.DeviceKeyHandler;
 
 import org.lineageos.internal.util.FileUtils;
-
-import lineageos.hardware.LineageHardwareManager;
 
 public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
 
+    private static final String VIRTUAL_KEYS_NODE = "/proc/touchpanel/capacitive_keys_enable";
     private static final String FP_HOME_NODE = "/sys/devices/soc/soc:fpc_fpc1020/enable_key_events";
 
     private static boolean sScreenTurnedOn = true;
@@ -61,28 +60,28 @@ public class KeyHandler implements DeviceKeyHandler {
         mContext.registerReceiver(mScreenStateReceiver, screenStateFilter);
     }
 
-    public KeyEvent handleKeyEvent(KeyEvent event) {
-        LineageHardwareManager hardware = LineageHardwareManager.getInstance(mContext);
-        boolean virtualKeysEnabled = hardware.get(LineageHardwareManager.FEATURE_KEY_DISABLE);
+    public boolean handleKeyEvent(KeyEvent event) {
+        boolean virtualKeysEnabled = FileUtils.isFileReadable(VIRTUAL_KEYS_NODE) &&
+                FileUtils.readOneLine(VIRTUAL_KEYS_NODE).equals("0");
         boolean fingerprintHomeButtonEnabled = FileUtils.isFileReadable(FP_HOME_NODE) &&
                 FileUtils.readOneLine(FP_HOME_NODE).equals("1");
 
         if (!hasSetupCompleted()) {
-            return event;
+            return false;
         }
 
         if (event.getKeyCode() == KeyEvent.KEYCODE_HOME) {
             if (event.getScanCode() == 96) {
                 if (DEBUG) Log.d(TAG, "Fingerprint home button tapped");
-                return virtualKeysEnabled ? null : event;
+                return virtualKeysEnabled;
             }
             if (event.getScanCode() == 102) {
                 if (DEBUG) Log.d(TAG, "Mechanical home button pressed");
                 return sScreenTurnedOn &&
-                        (virtualKeysEnabled || fingerprintHomeButtonEnabled) ? null : event;
+                        (virtualKeysEnabled || fingerprintHomeButtonEnabled);
             }
         }
-        return event;
+        return false;
     }
 
     private boolean hasSetupCompleted() {

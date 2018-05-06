@@ -21,9 +21,10 @@
     android:versionName="2.5"
     android:sharedUserId="android.uid.system">
 
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
     <protected-broadcast android:name="org.lineageos.settings.device.CUST_UPDATE" />
 
-    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
 
     <uses-sdk
         android:minSdkVersion="27" />
@@ -51,16 +52,21 @@
             android:name=".ButtonSettingsActivity"
             android:label="@string/button_panel_title">
             <intent-filter>
-                <action android:name="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_settings_additional_buttons" />
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.device" />
         </activity>
 
         <activity android:name=".KeyHandler" />
 
         <receiver android:name=".Startup" >
             <intent-filter>
-                <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
     </application>
