@@ -160,6 +160,7 @@
     <string name="button_panel_title">Additional buttons</string>
     <string name="button_swap_title">Swap buttons</string>
     <string name="button_swap_summary">Swap the order of recents and back buttons</string>
+    <string name="buttons_dashboard_summary">Swap buttons, fingerprint as home, etc</string>
 
     <!-- Fingerprint -->
     <string name="fingerprint_title">Fingerprint</string>
