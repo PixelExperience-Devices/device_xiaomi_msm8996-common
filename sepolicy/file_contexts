@@ -37,6 +37,7 @@
 # Binaries
 /(vendor|system/vendor)/bin/readfem   u:object_r:readfem_exec:s0
 /(vendor|system/vendor)/bin/readmac   u:object_r:readmac_exec:s0
+/vendor/bin/thermal-engine  u:object_r:thermal-engine_exec:s0
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service.xiaomi_8996       u:object_r:hal_ir_default_exec:s0
