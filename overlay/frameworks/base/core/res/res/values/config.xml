@@ -352,14 +352,17 @@
             64 - Volume rocker
           For example, a device with Home, Back and Menu keys would set this
         config to 7. -->
-    <add-resource type="integer" name="config_deviceHardwareKeys">83</add-resource>
+    <integer name="config_deviceHardwareKeys">83</integer>
     
     <!-- Does the battery LED support multiple colors. Used to decide if the user can change the colors -->
-    <add-resource type="bool" name="config_multiColorBatteryLed">true</add-resource>
+    <bool name="config_multiColorBatteryLed">true</bool>
     
     <!-- Enable Night display, which requires HWC 2.0. -->
     <bool name="config_nightDisplayAvailable">true</bool>
     
+    <!-- Button backlight -->
+    <bool name="config_button_brightness_support">true</bool>
+
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorNotificationLed">true</bool>
@@ -372,14 +375,9 @@
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
-    <!-- Button backlight -->
-    <add-resource type="bool" name="config_deviceHasButtonBacklight">true</add-resource>
-    <add-resource type="bool" name="config_deviceHasVariableButtonBrightness">true</add-resource>
-    <add-resource type="integer" name="config_buttonBrightnessSettingDefault">255</add-resource>
-
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <add-resource type="bool" name="config_multiColorNotificationLed">true</add-resource>
+    <bool name="config_multiColorNotificationLed">true</bool>
 
     <!-- Whether navigation bar can be disabled (for devices with hardware keys) -->
     <bool name="config_canDisableNavigationBar">true</bool>
