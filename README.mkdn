@@ -9,6 +9,6 @@ This is the common-tree used for all Xiaomi msm8996 devices.
 
 Branch          | Maintainer(s) | Device(s) maintained
 ---------------:|:-------------:|:----
-oreo-mr1        | @Felvesthe    | Xiaomi Mi 5 (Gemini)
-oreo-mr1-capnat | @Hlcpereira   | Xiaomi Mi 5s (Capricorn) and Mi 5s Plus (Natrium)
-oreo-mr1-scolit | @PsyMan47     | Xiaomi Mi Mix (Lithium) and Mi Note 2 (Scorpio)
+oreo-mr1-gemini |  Felvesthe    | Xiaomi Mi 5 (Gemini)
+oreo-mr1-capnat |  Hlcpereira   | Xiaomi Mi 5s (Capricorn) and Mi 5s Plus (Natrium)
+oreo-mr1-scolit |  PsyMan47     | Xiaomi Mi Mix (Lithium) and Mi Note 2 (Scorpio)
