@@ -68,7 +68,8 @@
         <activity android:name=".KeyHandler" />
 
         <receiver android:name=".Startup" >
-            <intent-filter>
+            <intent-filter android:priority="99" >
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
