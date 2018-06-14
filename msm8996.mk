@@ -35,6 +35,11 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 
+# Generic properties
+PRODUCT_GENERIC_PROPERTIES += \
+    use.dts_eagle=true \
+    hpx_send_params=1
+
 # HWUI overrides
 # $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
