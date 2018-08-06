@@ -44,7 +44,7 @@ public class TiltSensor implements SensorEventListener {
     private Sensor mSensor;
     private WakeLock mSensorWakeLock;
     private Context mContext;
-    private ExecutorService mExecutorService
+    private ExecutorService mExecutorService;
 
     private long mEntryTimestamp;
 
