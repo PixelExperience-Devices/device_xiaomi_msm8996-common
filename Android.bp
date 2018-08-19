@@ -1,5 +1,0 @@
-subdirs = [
-    "consumerir",
-    "light",
-    "usb",
-]
