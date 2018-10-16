@@ -339,7 +339,7 @@ PRODUCT_PACKAGES += \
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
-    librs_jni    
+    librs_jni
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -350,6 +350,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
