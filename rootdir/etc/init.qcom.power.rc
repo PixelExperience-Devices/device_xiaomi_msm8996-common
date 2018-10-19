@@ -51,8 +51,16 @@ on boot
     chown system system /dev/cpuset/camera-daemon/tasks
     chmod 0664 /dev/cpuset/camera-daemon/tasks
 
-    # Enable sched boost
-    write /proc/sys/kernel/sched_boost 1
+    # Update DVR cpusets to boot-time values.
+    write /dev/cpuset/kernel/cpus 0-3
+    write /dev/cpuset/system/cpus 0-3
+    write /dev/cpuset/system/performance/cpus 0-3
+    write /dev/cpuset/system/background/cpus 0-3
+    write /dev/cpuset/system/cpus 0-3
+    write /dev/cpuset/application/cpus 0-3
+    write /dev/cpuset/application/performance/cpus 0-3
+    write /dev/cpuset/application/background/cpus 0-3
+    write /dev/cpuset/application/cpus 0-3
 
 on charger
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -118,6 +126,10 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/ignore_hispeed_on_notif 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 1
+
+    # if EAS is present, switch to sched governor (no effect if not EAS)
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "schedutil"
 
     # Re-enable thermal hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
