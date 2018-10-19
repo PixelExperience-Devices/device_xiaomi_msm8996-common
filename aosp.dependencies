@@ -10,5 +10,11 @@
     "repository":  "jonascardoso/proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch":      "pe-pie"
+  },
+  {
+    "repository": "packages_apps_WallpapersBReel2018",
+    "target_path": "packages/apps/WallpapersBReel2018",
+    "branch": "pie",
+    "remote": "pixel-gitlab"
   }
 ]
