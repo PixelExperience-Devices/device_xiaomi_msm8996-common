@@ -27,7 +27,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # ARCore
 PRODUCT_PACKAGES += \
-    arcore
+    arcore \
+    ARStickersMod
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
