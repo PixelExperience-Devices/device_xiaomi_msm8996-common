@@ -16,7 +16,7 @@
 
 <permissions>
 
-    <privapp-permissions package="com.google.android.GoogleCamera">
+    <privapp-permissions package="com.google.android.Pixel2Mod">
         <permission name="android.permission.BIND_WALLPAPER"/>
     </privapp-permissions>
 
