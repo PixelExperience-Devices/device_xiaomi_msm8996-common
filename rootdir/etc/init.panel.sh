@@ -148,18 +148,3 @@ case "$vendor" in
         setprop sys.panel.vendor UNKNOWN
         ;;
 esac
-
-# Check panel_model and calibrate LGD Panel devices
-panel_model=`cat /sys/class/graphics/fb0/msm_fb_panel_info | grep panel_name`
-default_color = `getprop vendor.display.enable_default_color_mode`
-
-if [ "$panel_model" == "panel_name=lgd fhd cmd incell dsi panel" ]; then
-
-    if ["$default_color" == "1"]; then
-	    setprop vendor.display.enable_default_color_mode 0
-    fi
-
-    echo "1" > /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    echo "230 230 244" > /sys/devices/platform/kcal_ctrl.0/kcal
-    echo "45" > /sys/devices/platform/kcal_ctrl.0/kcal_sat
-fi

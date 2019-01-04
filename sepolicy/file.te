@@ -13,4 +13,3 @@ type sysfs_fpc_proximity, sysfs_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_panel, sysfs_type, fs_type;
 type thermal_data_file, data_file_type, file_type;
-type sysfs_kcal, fs_type, sysfs_type;
