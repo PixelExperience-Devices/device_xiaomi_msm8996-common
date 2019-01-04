@@ -130,6 +130,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.control_privapp_permissions=enforce
 
+#Power
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.power=msm8996
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
