@@ -31,3 +31,6 @@ set_prop(thermal-engine, powerctl_prop)
 
 # IThermal Thermal HAL
 hal_server_domain(thermal-engine, hal_thermal)
+
+# Allow thermal-engine to access healthd nodes
+allow thermal-engine sysfs_batteryinfo:dir search;
