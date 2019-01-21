@@ -267,13 +267,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_8996
 
-# LiveDisplay native
+# LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-sdm \
-    vendor.lineage.livedisplay-V1.0-java
+    vendor.lineage.livedisplay@2.0-service-sdm
 
-PRODUCT_BOOT_JARS += \
-    vendor.lineage.livedisplay-V1.0-java
 
 # Media
 PRODUCT_COPY_FILES += \
