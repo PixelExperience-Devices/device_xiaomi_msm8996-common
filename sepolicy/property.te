@@ -1,2 +1,4 @@
 type system_panel_prop, property_type;
 type thermal_prop, property_type;
+type wcg_prop, property_type;
+type power_prop, property_type;
