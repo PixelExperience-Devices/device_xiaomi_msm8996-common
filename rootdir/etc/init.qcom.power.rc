@@ -182,9 +182,6 @@ on property:sys.boot_completed=1
     # Set I/O squeduler
     setprop sys.io.scheduler "cfq"
 
-    # Start I/O prefetcher service
-    start iop
-
     # Update cpusets now that boot is complete and we want better load balancing
     write /dev/cpuset/top-app/cpus 0-3
     write /dev/cpuset/foreground/cpus 0-2
@@ -229,12 +226,6 @@ service charger /sbin/chargeonlymode
     class charger
     group system graphics
     seclabel u:r:healthd:s0
-
-service energy-awareness /vendor/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
