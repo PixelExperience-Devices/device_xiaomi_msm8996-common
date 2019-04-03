@@ -28,7 +28,7 @@
  */
 
 #define LOG_NIDEBUG 0
-#define LOG_TAG "android.hardware.power@1.3-service.crosshatch-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi-libperfmgr"
 
 #include <errno.h>
 #include <inttypes.h>
@@ -48,9 +48,7 @@
 #define RPM_SYSTEM_STAT "/d/system_stats"
 #endif
 
-#ifndef TAP_TO_WAKE_NODE
 #define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
-#endif
 
 #define ARRAY_SIZE(x) (sizeof((x))/sizeof((x)[0]))
 #define LINE_SIZE 128

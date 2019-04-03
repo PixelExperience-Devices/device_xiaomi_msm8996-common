@@ -16,7 +16,7 @@
 
 //#define LOG_NDEBUG 0
 
-#define LOG_TAG "android.hardware.power@1.3-service.crosshatch-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.xiaomi-libperfmgr"
 
 #include <fcntl.h>
 #include <poll.h>
