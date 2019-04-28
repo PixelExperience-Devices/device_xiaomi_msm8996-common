@@ -17,4 +17,3 @@ ctl.thermal-engine         u:object_r:thermal_prop:s0
 
 ro.min_freq_0              u:object_r:freq_prop:s0
 ro.min_freq_4              u:object_r:freq_prop:s0
-sys.post_boot.parsed       u:object_r:vendor_mpctl_prop:s0
