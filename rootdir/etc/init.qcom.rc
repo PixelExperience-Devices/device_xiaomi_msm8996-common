@@ -551,11 +551,11 @@ service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
     user system
     group radio diag inet log
 
-service vendor.imsrcsservice /vendor/bin/imsrcsd
-    class main
-    user system
-    group radio diag inet log
-    writepid /dev/cpuset/system-background/tasks
+#service vendor.imsrcsservice /vendor/bin/imsrcsd
+#    class main
+#    user system
+#    group radio diag inet log
+#    writepid /dev/cpuset/system-background/tasks
 
 on property:vendor.ims.DATA_DAEMON_STATUS=1
     restart vendor.ims_rtp_daemon
