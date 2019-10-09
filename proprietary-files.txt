@@ -589,13 +589,15 @@ vendor/lib/libsmemlog.so
 vendor/lib64/libqmi_cci.so|411a074dc765fb263bec50531ce5c408dd72388f
 vendor/lib/libqmi_cci.so|a921e84ec500f7cfb7fe88a4ffba149581410a44
 
+# Radio - from LA.UM.8.6.r1-01900-89xx.0
+product/framework/qti-telephony-common.jar|532af9b997feab1f71c3a6457d14b7bec22fe6b6
+
 # RIL
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
 framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
-framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
