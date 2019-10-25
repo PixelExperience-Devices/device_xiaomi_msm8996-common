@@ -200,6 +200,7 @@ VENDOR_SECURITY_PATCH := 2018-10-01
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/temp
+SELINUX_IGNORE_NEVERALLOWS := true
 #BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Vendor init
