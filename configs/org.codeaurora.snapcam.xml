@@ -16,7 +16,7 @@
 
 <permissions>
 
-    <privapp-permissions package="com.google.android.Pixel2Mod">
+    <privapp-permissions package="org.codeaurora.snapcam">
         <permission name="android.permission.BIND_WALLPAPER"/>
     </privapp-permissions>
 
