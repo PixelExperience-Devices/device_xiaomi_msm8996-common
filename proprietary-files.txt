@@ -538,11 +538,11 @@ vendor/lib/libqti-perfd-client.so|a4a6da47ee26fcd5116c514f7fed15b91306aea3
 vendor/lib/libqti-util.so|d65f3ef240cebea73bd1ba8b1132a7e639aa05bb
 vendor/lib/vendor.qti.hardware.perf@1.0.so|84e437b0dea2d8c1d5712a9fadf132ae5d665d46
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib64/libperipheral_client.so
-vendor/lib/libperipheral_client.so
+# Peripheral manager - from LA.UM.8.6.r1-01900-89xx.0
+vendor/bin/pm-proxy|bae613f75568a6f0b47c86b878c25e4dd76e9054
+vendor/bin/pm-service|a5f14c84fed091bb66d160f2e45a6e373d3d19ab
+vendor/lib64/libperipheral_client.so|f9899d69f25aafb7bc95dd44d8848c86eab5a4bd
+vendor/lib/libperipheral_client.so|033dd6f669530e7fe28a07f2b4fe9dee609dbae2
 
 # Postprocessing - from LA.UM.8.6.r1-01900-89xx.0
 vendor/bin/hw/vendor.display.color@1.0-service|633a0a4bed08202ef3799275f06920eb4382db31
