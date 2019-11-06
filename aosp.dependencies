@@ -6,7 +6,7 @@
     "branch":      "pe-pie"
   },
   {
-    "remote":      "github",
+    "remote":      "gitlab",
     "repository":  "jonascardoso/proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch":      "pe-pie"
