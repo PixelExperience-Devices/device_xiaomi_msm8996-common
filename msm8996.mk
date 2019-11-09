@@ -25,11 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     vendor/aosp/overlay/CarrierConfig
 
-# ARCore
-PRODUCT_PACKAGES += \
-    arcore \
-    ARStickersMod
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
 
