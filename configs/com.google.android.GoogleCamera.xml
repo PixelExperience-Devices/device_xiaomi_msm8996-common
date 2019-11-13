@@ -16,7 +16,7 @@
 
 <permissions>
 
-    <privapp-permissions package="org.codeaurora.snapcam">
+    <privapp-permissions package="com.google.android.GoogleCamera">
         <permission name="android.permission.BIND_WALLPAPER"/>
     </privapp-permissions>
 
