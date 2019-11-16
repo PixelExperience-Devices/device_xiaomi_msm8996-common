@@ -262,6 +262,7 @@ vendor/lib64/com.quicinc.cne.constants@2.1.so|41cab788fd2c17bce5619771431248f443
 vendor/lib64/com.quicinc.cne.server@2.0.so|403dee79f2adf024a44947c5131c00e119db84e7
 vendor/lib64/com.quicinc.cne.server@2.1.so|ed78619bc3a4b54c57183c943ce2147c7aa58920
 vendor/lib64/com.quicinc.cne.server@2.2.so|3bb958c5cba5d448cfb2f52f5af31779f91fe4c5
+vendor/lib64/libcacertclient.so|e05949a011c39667984bb70e19a3a67c06739737
 vendor/lib64/libcne.so|249e8cf3bd9f8e9dce7090a6850fc1d79acc7f36
 vendor/lib64/libcneapiclient.so|9e121b96ce15e33aaf9318b7b93eaa49a644b7cf
 vendor/lib64/libcneoplookup.so|86c694067e735b86efa04871fde8a9a7a81161d8
