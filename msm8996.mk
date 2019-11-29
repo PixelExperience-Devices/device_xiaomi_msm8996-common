@@ -366,6 +366,7 @@ PRODUCT_PACKAGES += \
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt \
     LiveWallpapersPicker \
     librs_jni
 
