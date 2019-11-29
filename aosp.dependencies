@@ -1,9 +1,21 @@
 [
   {
     "remote":      "github",
-    "repository":  "LineageOS/android_kernel_xiaomi_msm8996",
+    "repository":  "MisterJaworro/gemini",
     "target_path": "kernel/xiaomi/msm8996",
-    "branch":      "lineage-17.0"
+    "branch":      "vanilla-3.18"
+  },
+  {
+    "remote":      "github",
+    "repository":  "MisterJaworro/aarch64",
+    "target_path": "kernel/xiaomi/msm8996/aarch64",
+    "branch":      "master"
+  },
+  {
+    "remote":      "github",
+    "repository":  "MisterJaworro/qcacld-2.0",
+    "target_path": "kernel/xiaomi/msm8996/drivers/staging/qcacld-2.0",
+    "branch":      "master"
   },
   {
     "remote":      "github",
