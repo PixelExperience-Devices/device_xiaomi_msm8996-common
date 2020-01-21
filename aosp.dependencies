@@ -1,0 +1,20 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "JonasCardoso/android_kernel_xiaomi_msm8996",
+    "target_path": "kernel/xiaomi/msm8996",
+    "branch":      "ten-3.18.x"
+  },
+  {
+    "remote":      "github",
+    "repository":  "PixelExperience-Xiaomi-MSM8996/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch":      "ten-3.18.x"
+  },
+  {
+    "repository": "packages_apps_WallpapersBReel2019",
+    "target_path": "packages/apps/WallpapersBReel2019",
+    "branch": "ten",
+    "remote": "pixel-gitlab"
+  }
+]
