@@ -365,4 +365,8 @@
 
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
+
+    <!-- Button backlight -->
+    <bool name="config_button_brightness_support">true</bool>
+    <integer name="config_buttonBrightnessSettingDefault">100</integer>
 </resources>
