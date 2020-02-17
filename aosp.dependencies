@@ -1,25 +1,11 @@
 [
   {
-    "remote":      "github",
-    "repository":  "MisterJaworro/gemini",
+    "repository":  "kernel_xiaomi_lithium",
     "target_path": "kernel/xiaomi/msm8996",
     "branch":      "vanilla-3.18"
   },
   {
-    "remote":      "github",
-    "repository":  "MisterJaworro/aarch64",
-    "target_path": "kernel/xiaomi/msm8996/aarch64",
-    "branch":      "master"
-  },
-  {
-    "remote":      "github",
-    "repository":  "MisterJaworro/qcacld-2.0",
-    "target_path": "kernel/xiaomi/msm8996/drivers/staging/qcacld-2.0",
-    "branch":      "master"
-  },
-  {
-    "remote":      "github",
-    "repository":  "Inkypen79/vendor_mi8996",
+    "repository":  "vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch":      "ten"
   },
