@@ -20,3 +20,5 @@ allowxperm readfem self:socket ioctl msm_sock_ipc_ioctls;
 
 allow readfem diag_device:chr_file rw_file_perms;
 allow readfem sysfs:file r_file_perms;
+
+allow readfem vendor_file:dir read;
