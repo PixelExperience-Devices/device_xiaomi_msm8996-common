@@ -1,1 +1,6 @@
 get_prop(sensors, system_panel_prop)
+allow sensors mnt_vendor_file:file getattr;
+allow sensors mnt_vendor_file:file { read write };
+allow sensors vendor_file:dir read;
+allow sensors mnt_vendor_file:file open;
+allow sensors persist_file:dir { getattr search };

@@ -1,0 +1,13 @@
+allow untrusted_app adb_keys_file:dir getattr;
+allow untrusted_app adbd_exec:file getattr;
+allow untrusted_app audioserver_data_file:dir getattr;
+allow untrusted_app bluetooth_data_file:dir getattr;
+allow untrusted_app bootstat_data_file:dir getattr;
+allow untrusted_app boottrace_data_file:dir getattr;
+allow untrusted_app init_exec:file { getattr read };
+allow untrusted_app init_exec:lnk_file read;
+allow untrusted_app radio_data_file:dir getattr;
+allow untrusted_app sysfs_kgsl:dir search;
+allow untrusted_app system_app_data_file:dir getattr;
+allow untrusted_app system_data_file:dir read;
+allow untrusted_app sysfs_kgsl:lnk_file read;

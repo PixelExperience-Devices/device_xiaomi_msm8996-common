@@ -14,3 +14,5 @@ allow init_tfa system_file:file execute_no_trans;
 # Shell script needs to execute /vendor/bin/sh
 allow init_tfa vendor_shell_exec:file rx_file_perms;
 allow init_tfa vendor_toolbox_exec:file rx_file_perms;
+
+allow init_tfa vendor_file:dir read;
