@@ -11,10 +11,10 @@
     "branch":      "ten"
   },
   {
-    "repository":  "vendor_xiaomi_msm8996-common",
+    "repository":  "PixelExperience-Xiaomi-MSM8996/proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch":      "ten",
-    "remote":      "pixel-devices-blobs"
+    "remote":      "github"
   },
   {
     "repository": "packages_apps_WallpapersBReel2019",
