@@ -2,3 +2,4 @@
 allow mediaserver audio_data_file:sock_file { create setattr unlink };
 allow mediaserver audio_data_file:dir remove_name;
 allow mediaserver mediaserver_tmpfs:file { read write execute };
+allow mediaserver system_file:file execmod;
