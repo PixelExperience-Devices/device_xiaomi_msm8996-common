@@ -365,8 +365,7 @@ PRODUCT_PACKAGES += \
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
-    librs_jni \
-    PixelLiveWallpaperPrebuilt
+    librs_jni
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
