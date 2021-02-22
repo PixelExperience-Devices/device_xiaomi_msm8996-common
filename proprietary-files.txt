@@ -9,8 +9,8 @@ vendor/lib64/libfastcvopt.so|7adca688648f0e6fb6875aabdb56ef933c0c69c8
 vendor/lib64/libmdsprpc.so|45011dd515c41129063e091abd253861673d7a42
 vendor/lib/libadsprpc.so|8d5463f75395bd571aee5a55baca3a10efbb3dc0
 vendor/lib/libadsp_default_listener.so|48741bb1effb38b9bcbf6392e90779d75de98b57
-vendor/lib/libadsp_hvx_callback_skel.so|b7e47d8d0c011caea30daf974de81eb01bb90268
-vendor/lib/libadsp_hvx_stub.so|5842e47b5929e15c8b63f1aa4795ca3432debebb
+vendor/lib/libadsp_hvx_callback_skel.so|23e99c81afe6ecaf655aaa93298d65e8d7dfa36a
+vendor/lib/libadsp_hvx_stub.so|bf3348cb891da176a159102b5ef9522a6a26c170
 vendor/lib/libfastcvadsp_stub.so|0382c53e0882ae5463e1a04522b5de7e506b0c59
 vendor/lib/libfastcvopt.so|057708e620ffe928a834ac230d89cd2ce65ea5da
 vendor/lib/libmdsprpc.so|812b190cce2acad81bef60f1ce691fda9607ddf0
@@ -213,9 +213,9 @@ product/lib64/com.quicinc.cne.api@1.1.so:system_ext/lib64/com.quicinc.cne.api@1.
 product/lib64/com.quicinc.cne.constants@1.0.so:system_ext/lib64/com.quicinc.cne.constants@1.0.so|e2f9123a013c2c116b02a1e057870f885808f654
 product/lib64/com.quicinc.cne.constants@2.0.so:system_ext/lib64/com.quicinc.cne.constants@2.0.so|b58e07086d9992d0911391ad185f277e1cfd4fe5
 product/lib64/com.quicinc.cne.constants@2.1.so:system_ext/lib64/com.quicinc.cne.constants@2.1.so|92fc6a953b061fea1895e58fa298ce8de8a6d03c
-system/etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
-system/etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35|238e785e9674b27c4b2365958d127533d7293132
-system/etc/cne/Nexus/VZW/VZW_profiles.xml|0d35b3266ea656d8868ae8f5d7e938f4859e9b0a|0f63b632e3a3f114def7aeadaabd13851c8ceec5
+system/etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
+system/etc/cne/Nexus/ROW/ROW_profiles.xml|238e785e9674b27c4b2365958d127533d7293132
+system/etc/cne/Nexus/VZW/VZW_profiles.xml|0f63b632e3a3f114def7aeadaabd13851c8ceec5
 -vendor/app/CneApp/CneApp.apk|2356a0335ab8e0106832a9325f972467654fd1f0
 -vendor/app/IWlanService/IWlanService.apk|12da3d82b6cc062d2af29a0b5f43fc8acf9adbb2
 vendor/bin/cnd|edba24c950546f80478916bb1ffe02ed58f4c96d
@@ -273,15 +273,15 @@ vendor/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
 # DPM - from daisy - QKQ1.191002.002
 product/bin/dpmd:system_ext/bin/dpmd|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
 product/etc/dpm/dpm.conf:system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
-product/etc/init/dpmd.rc:system_ext/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669|f061bb76ae844f6df04c1d78caf00cf29a41b112
-product/etc/permissions/com.qti.dpmframework.xml:system_ext/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09|ab94e634782b7a2e833ce129eda74cb9333ed3f7
-product/etc/permissions/dpmapi.xml:system_ext/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d|697c88d7ebef6232ef214b17b4023bbb3ff4e625
+product/etc/init/dpmd.rc:system_ext/etc/init/dpmd.rc|f061bb76ae844f6df04c1d78caf00cf29a41b112
+product/etc/permissions/com.qti.dpmframework.xml:system_ext/etc/permissions/com.qti.dpmframework.xml|ab94e634782b7a2e833ce129eda74cb9333ed3f7
+product/etc/permissions/dpmapi.xml:system_ext/etc/permissions/dpmapi.xml|697c88d7ebef6232ef214b17b4023bbb3ff4e625
 product/framework/com.qti.dpmframework.jar:system_ext/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
 product/framework/dpmapi.jar:system_ext/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
 product/lib64/libdpmctmgr.so:system_ext/lib64/libdpmctmgr.so|7ee0d1d40a8fc7fea924602db13717235ed2c2aa
 product/lib64/libdpmfdmgr.so:system_ext/lib64/libdpmfdmgr.so|cb0157da0ffe6827471662a5b7881e85165cb5aa
-product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|8b2183e4b50a033b10c640cbc0b14a39ed5dca16|c335716a1b71f538beb8b51719c1b099ae686328
+product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|c335716a1b71f538beb8b51719c1b099ae686328
 product/lib64/libdpmtcm.so:system_ext/lib64/libdpmtcm.so|a98ab3c419ebe49c6f3351ef4fa64ebda65d0e7d
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 vendor/bin/dpmQmiMgr|a43829d478ebc243b5f7307b44aa501a7a3c8211
@@ -304,7 +304,7 @@ vendor/lib/libQSEEComAPI.so
 # DRM Widevine - from marlin - PPR2.181005.003
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|2c2455a218eb8d5368f1ccd39bea51be8364a0f3
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
-vendor/lib/libwvhidl.so|37333d17980282275805807bc648bf8516fd4143|4a7047baa3c11cf0c61a7be74dbf0fb07b84a238
+vendor/lib/libwvhidl.so|4a7047baa3c11cf0c61a7be74dbf0fb07b84a238
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.msm8996.so
@@ -355,7 +355,7 @@ vendor/lib64/libRSDriver_adreno.so|e7628b78d034500c64d09fcaf5305971242e1acd
 vendor/lib64/libadreno_utils.so|04b3878ea84a99f133934580adfd6905f6cc102b
 vendor/lib64/libbccQTI.so|e79ba0450ce215bfb81e518cce310f378314b4e5
 vendor/lib64/libc2d30_bltlib.so|644a88f490cc883492d94b9f581127fb33f51415
-vendor/lib64/libfastcvopt.so|f5e25aa055a57e23530b858bf7dd204a6009effc
+vendor/lib64/libfastcvopt.so|7adca688648f0e6fb6875aabdb56ef933c0c69c8
 vendor/lib64/libgsl.so|5453da1723c3b014850165b42236ba26af11a7ad
 vendor/lib64/libllvm-glnext.so|dad8139672a9dcff4270a58599aa1b72d13e62fc
 vendor/lib64/libllvm-qcom.so|88f4199538ce887c91936bf70eef31615c938aa2
@@ -375,7 +375,7 @@ vendor/lib/libRSDriver_adreno.so|51e8ebcd4584726cbee21a4486b6f37ce5e716f1
 vendor/lib/libadreno_utils.so|3a09e6720121f5b459a1fc7f9639b632da5832ec
 vendor/lib/libbccQTI.so|124156259b7900ac44c48dd9cf83b210d02d8c9d
 vendor/lib/libc2d30_bltlib.so|4a486823ef2a9ea14f4f02c9eb9053ac5fb028af
-vendor/lib/libfastcvopt.so|2df00c3827fe1db322084cb3935241f17d1532f4
+vendor/lib/libfastcvopt.so|057708e620ffe928a834ac230d89cd2ce65ea5da
 vendor/lib/libgsl.so|2ddafd66848dfd146bbaf184b69f92df9f79c99f
 vendor/lib/libllvm-glnext.so|a28adae3ae758cdffc889d681b3cdefe24351c32
 vendor/lib/libllvm-qcom.so|3079ae9049c8758664e6ade78837e0fc6c2272d5
@@ -400,8 +400,8 @@ vendor/lib64/libsdmextension.so|47b7fcfb790df4417654c566af1a8a74d4bf3e2f
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 
 # Graphics (Vulkan) - from daisy - QKQ1.191002.002
-vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8996.so|8c01e237bdc542ca682cb97ce28f264135033fab|b09121b664897181c29ec5a529117772a971229b
-vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8996.so|c24dee59782e94c119e1e6ae00ac05c2d67c3f93|6142249d50da115d9fe3b20581dbeedd961727c3
+vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8996.so|b09121b664897181c29ec5a529117772a971229b
+vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8996.so|6142249d50da115d9fe3b20581dbeedd961727c3
 
 # Graphics firmware
 vendor/firmware/a530_gpmu.fw2
@@ -591,7 +591,6 @@ vendor/lib/libqmi_cci.so|a921e84ec500f7cfb7fe88a4ffba149581410a44
 
 # Radio - from LA.UM.8.6.r1-01900-89xx.0
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98ef3be8ca7630ba8e9383e41e423ceb
-product/framework/qti-telephony-common.jar|532af9b997feab1f71c3a6457d14b7bec22fe6b6
 
 # RIL
 -app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -639,11 +638,11 @@ vendor/bin/sensors.qti|116403d330d6e1247cd5464261c1b06f12f86369
 vendor/lib/hw/activity_recognition.msm8996.so|6bec19a06f59abca3d43cd6a83c88fbe9daea7f6
 vendor/lib/libsensor1.so|de27fcd2ab95788e09310c5f2cf58a0540afcfe3
 vendor/lib/libsensor_reg.so|9a3568dc423598886b7f16d91d76e53cd0220387
-vendor/lib/sensors.ssc.so
+vendor/lib/sensors.ssc.so|9b62afc64abd6658cc5712c99a304abdeea07948
 vendor/lib64/hw/activity_recognition.msm8996.so|64901bc837ed32dee28bbff9a60df7d8ac5cd140
 vendor/lib64/libsensor1.so|f8524d62d2ad52849f4a13b018baf08d0eac8180
 vendor/lib64/libsensor_reg.so|8ca48358abf3f8f84f86036b02dbb210a5870742
-vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.ssc.so|ef8ead3ba3330c8375a47ee4131bdb5a21f7a83e
 
 # Thermal - from op3 - PKQ1.181203.001
 vendor/bin/thermal-engine|b15c9e8fa54ebb15dfeb36c7fbc834a28b4c836e
